@@ -24,7 +24,6 @@ yarn-error.log
 
 # 환경 설정 및 민감 정보
 .env
-*.lock
 storage/*.key
 
 # 민감 정보만 제외
@@ -37,7 +36,6 @@ keys/cosign.key
 # dist 디렉토리는 추적 (배포 대상)
 !dist/
 !dist/**
-dist/*.jar
 
 # 데이터베이스 파일
 *.db
