@@ -53,4 +53,7 @@ node_modules/
 
 # 프레임워크 런타임 디렉토리
 public/storage/
-storage/framework/
+
+storage/framework/views/*.php
+storage/framework/views/.gitkeep
+
