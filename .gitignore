@@ -24,7 +24,6 @@ yarn-error.log
 
 # 환경 설정 및 민감 정보
 .env
-storage/*.key
 
 # 민감 정보만 제외
 keys/cosign.key
@@ -51,11 +50,25 @@ keys/cosign.key
 /vendor/
 node_modules/
 
-# 프레임워크 런타임 디렉토리
+# 프레임워크 런타임 디렉터리
 public/storage/
 
 # Laravel runtime 디렉터리 구조 유지
-storage/framework/views/*.php
-storage/framework/views/.gitkeep
-storage/framework/sessions/.gitkeep
-storage/framework/cache/.gitkeep
+!storage/
+!storage/framework/
+!storage/framework/views/
+!storage/framework/views/.gitkeep
+!storage/framework/sessions/
+!storage/framework/sessions/.gitkeep
+!storage/framework/cache/
+!storage/framework/cache/.gitkeep
+
+# 무시할 파일들
+storage/logs/
+*.log
+*.tmp
+*.cache
+*.swp
+*.bak
+*.pid
+*.gz
